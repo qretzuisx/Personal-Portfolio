@@ -1,7 +1,7 @@
 
 body {
     font-family: monospace;
-    background:linear-gradient(rgb(192, 190, 187), rgb(205, 197, 200), rgb(234, 234, 234));
+    background-image: url(images/bkg.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -29,9 +29,10 @@ ul {
     margin-right: 5px ;
 }
 h3 {
-    text-align: justify;
+    text-align: center;
     margin-left: 15px;
     margin-right: 10px;
+   font-size: 20px;
 }
 img {
     display: block;
@@ -100,14 +101,14 @@ img {
 .front {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    background-image: url('projects/resume/img/ID.png');
+    background-image: url('images/ID.png');
     background-size: cover;
 }
 
 .back {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    background-image: url('projects/resume/img/ID.gif');
+    background-image: url('images/ID.gif');
     background-size: cover;
     transform: rotatey(180deg);
 }
