@@ -3,83 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Rhizalyn T. Espiritu - Personal Portfolio</title>
+    <meta name="description" content="Personal portfolio of Rhizalyn T. Espiritu - BSIT Web Technology Student">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Scroll Progress Indicator -->
+    <div id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">RE</a>
+            <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="navMenu" class="nav-menu">
+                <li><a href="#aboutme" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
     <section id="aboutme">
         <div class="grid-container">
             <div class="grid-item">
                 <div class="front">
-                        <img src="images/UC_Official_Logo.png" alt="UC Logo">
-                        <img src="images/rhiza.png" alt="Picture">
-                        <div class="description-overlay">
-                            <h1>Rhizalyn T. Espiritu</h1>
-                            <ul>
-                                <li><strong>ID NUMBER:</strong> 23-4079-294</li>
-                                <li><strong>COURSE:</strong> BSIT WEB TECHNOLOGY</li>
-                                <li><strong>ADDRESS:</strong> Baguio City</li>
-                                <li><strong>CONTACT NUMBER:</strong> 09296386608 </li>
-                            </ul>
-                            <h2>Skills</h2>
-                            <ul>
-                                <li>Knowledgeable with multimedia software: Adobe Photoshop, Adobe Premiere, Davinci Resolve.</li>
-                                <li>Knowledgeable in programming language: Python, Java, C#.</li>
-                                <li>Holder of Certificate of Competency in Developing Responsive Web Design (Web Development COC-1).</li>
-                                <li>Open to feedback and seeking opportunities to improve and grow.</li>
-                                <br>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="description-overlay">
-                            </ul>
-                        </div>
+                    <img src="images/UC_Official_Logo.png" alt="UC Logo">
+                    <img src="images/rhiza.png" alt="Picture">
+                    <div class="description-overlay">
+                        <h1 class="typing-name">Rhizalyn T. Espiritu</h1>
+                        <ul>
+                            <li><strong>ID NUMBER:</strong> 23-4079-294</li>
+                            <li><strong>COURSE:</strong> BSIT WEB TECHNOLOGY</li>
+                            <li><strong>ADDRESS:</strong> Baguio City</li>
+                            <li><strong>CONTACT NUMBER:</strong> 09296386608</li>
+                        </ul>
                     </div>
                 </div>
-            </div>        
+                <div class="back">
+                    <div class="description-overlay">
+                    </div>
+                </div>
+            </div>
+        </div>        
     </section>
 
-    <section id="projects">
-        <h3>My Projects</h3>
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>💻 Programming Languages</h3>
+                <div class="skill-item">
+                    <span class="skill-name">Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Java</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">C#</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">HTML/CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>🎨 Multimedia Software</h3>
+                <div class="skill-item">
+                    <span class="skill-name">Adobe Photoshop</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Adobe Premiere</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">DaVinci Resolve</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category certification">
+                <h3>🏆 Certifications</h3>
+                <div class="cert-badge">
+                    <span class="cert-icon">📜</span>
+                    <p>Certificate of Competency in Developing Responsive Web Design (Web Development COC-1)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+        <h2 class="section-title">My Projects</h2>
         <div class="project-grid">
             <div class="project-item">
                 <a href="projects/TributePage/index.html" target="_blank">
                     <img src="images/w1.png" alt="Tribute Page">
-                    <div class="description-overlay">
+                    <div class="project-overlay">
+                        <h4>Tribute Page</h4>
+                        <p>A tribute to an inspiring figure</p>
                     </div>
                 </a>
             </div>
             <div class="project-item">
                 <a href="projects/SurveyForm/index.html" target="_blank">
                     <img src="images/w3.png" alt="Survey Form">
-                    <div class="description-overlay">
+                    <div class="project-overlay">
+                        <h4>Survey Form</h4>
+                        <p>Interactive form with validation</p>
                     </div>
                 </a>
             </div>
             <div class="project-item">
                 <a href="projects/ProductLandingPage/index.html" target="_blank">
                     <img src="images/w4.png" alt="Product Landing Page">
-                    <div class="description-overlay">
+                    <div class="project-overlay">
+                        <h4>Product Landing Page</h4>
+                        <p>Modern product showcase</p>
                     </div>
                 </a>
             </div>
             <div class="project-item">
                 <a href="projects/TechnicalDocumentation/index.html" target="_blank">
                     <img src="images/w2.png" alt="Technical Documentation Page">
-                    <div class="description-overlay">
+                    <div class="project-overlay">
+                        <h4>Technical Documentation</h4>
+                        <p>Comprehensive documentation page</p>
                     </div>
                 </a>
             </div>
             <div class="project-item">
                 <a href="projects/Rhizalyn Website/index.html" target="_blank">
                     <img src="images/w5.png" alt="Personal Webpage">
-                    <div class="description-overlay">
+                    <div class="project-overlay">
+                        <h4>Personal Webpage</h4>
+                        <p>Multi-page personal website</p>
                     </div>
                 </a>
             </div>
         </div>
-
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Connect!</h3>
+                <p>Feel free to reach out for collaborations, questions, or just to say hello!</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Baguio City, Philippines</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>09296386608</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <button id="copyEmail" class="copy-email-btn" data-email="rhizalyn.espiritu@example.com">
+                            Click to copy email
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="contactName">Name *</label>
+                    <input type="text" id="contactName" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email *</label>
+                    <input type="email" id="contactEmail" name="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Message *</label>
+                    <textarea id="contactMessage" name="message" rows="5" placeholder="Your message..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message ✉️</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Rhizalyn T. Espiritu. All rights reserved.</p>
+            <p class="footer-tagline">Open to feedback and seeking opportunities to improve and grow. 🌱</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
